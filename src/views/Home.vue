@@ -1,18 +1,347 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="wrapper">
+        <section class="main">
+            <Header/>
+            <div class="main-line"><img src="@/assets/img/scroll-line.svg" alt="" /></div>
+            <div class="main-content"><img src="@/assets/img/main-image.svg" alt="" /></div>
+            <div class="main-bottom"></div>
+        </section>
+        <section class="big-bg">
+            <section class="service">
+                <div class="service-container">
+                    <div class="service-title"><p class="service-title__text">наши услуги</p></div>
+                    <div class="service-list">
+                        <div class="service-card card-1">
+                            <div class="card-title">
+                                <p class="card-title__text">Связи с<br />общественностью</p>
+                            </div>
+                            <ul class="card-list">
+                                <li>формирование положительного имиджа компании</li>
+                                <li>подготовка и проведение PR-кампаний</li>
+                                <li>работа со СМИ</li>
+                                <li>подготовка пресс-релизов</li>
+                                <li>организация пресс-туров</li>
+                                <li>проведение мероприятий для прессы</li>
+                                <li>комментарийные программы</li>
+                                <li>антикризисный пиар</li>
+                                <li>мониторинг СМИ и аналитика</li>
+                                <li>написание текстовых материалов любой тематики и сложности</li>
+                                <li>письменные и устные переводы</li>
+                            </ul>
+                        </div>
+                        <div class="service-card card-2">
+                            <div class="card-title"><p class="card-title__text">Мероприятия</p></div>
+                            <ul class="card-list">
+                                <li>организация бизнес, культурных и спортивных мероприятий</li>
+                                <li>проведение форумов, конференций и экспертных мероприятий</li>
+                                <li>разработка партнерских пакетов и поиск информационных партнеров</li>
+                            </ul>
+                        </div>
+                        <div class="service-card card-3">
+                            <div class="card-title">
+                                <p class="card-title__text">Создание фото и<br />видео контента</p>
+                            </div>
+                            <ul class="card-list">
+                                <li>проведение предметных, интерьерных и репортажных фотосессий</li>
+                                <li>съемки видео роликов и постпродакшн</li>
+                                <li>создание рекламного и корпоративного контента</li>
+                            </ul>
+                        </div>
+                        <div class="service-card card-4">
+                            <div class="card-title"><p class="card-title__text">Digital & SMM</p></div>
+                            <ul class="card-list">
+                                <li>ведение аккаунтов в соц сетях</li>
+                                <li>работа с лидерами мнений</li>
+                                <li>настройка и ведение рекламных кампаний</li>
+                            </ul>
+                        </div>
+                        <div class="service-card card-5">
+                            <div class="card-title"><p class="card-title__text">Дизайн и брендинг</p></div>
+                            <ul class="card-list">
+                                <li>разработка логотипа и фирменного стиля</li>
+                                <li>создание инфографик</li>
+                                <li>оформление презентаций</li>
+                                <li>креатив и дизайн рекламных материалов</li>
+                                <li>дизайн упаковки</li>
+                            </ul>
+                        </div>
+                        <div class="service-card card-6">
+                            <div class="card-title"><p class="card-title__text">Работа с государственными структурами</p></div>
+                            <ul class="card-list">
+                                <li>разработка проектов совместно с органами государственной власти</li>
+                                <li>формирование положительного образа компании</li>
+                                <li>весь спектр информационной и it поддержки некоммерческого сектора</li>
+                                <li>grassroots технологии</li>
+                            </ul>
+                        </div>
+                        <div class="service-card card-7">
+                            <div class="card-title"><p class="card-title__text">Международные проекты</p></div>
+                            <ul class="card-list">
+                                <li>PR-сопровождение иностранных брендов на российском рынке</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-line">
+                    <div class="service-line__wrapper">
+                        <div class="service-line__text">
+                            <marquee class="marquee-black marquee-line"
+                            >СВОБОДА КОММУНИКАЦИЯ ДЛЯ ВАШЕГО БИЗНЕСА СВОБОДА КОММУНИКАЦИЯ ДЛЯ ВАШЕГО БИЗНЕСА</marquee
+                            ><marquee class="marquee-white marquee-line"
+                        >СВОБОДА КОММУНИКАЦИЯ ДЛЯ ВАШЕГО БИЗНЕСА СВОБОДА КОММУНИКАЦИЯ ДЛЯ ВАШЕГО БИЗНЕСА</marquee
+                        >
+                        </div>
+                        <div class="service-line__block"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about-container">
+                    <div class="about-title"><p class="about-title__text">о нас</p></div>
+                    <div class="about-content">
+                        <div class="about-content__title">
+                            <span>бутиковое агентство профессионалов<br />в сфере коммуникаций, которые обожают<br />свое дело</span>
+                        </div>
+                        <div class="about-content__desc">
+              <span
+              >Freedom PR - бутиковое агентство профессионалов в сфере коммуникаций, которые обожают свое дело. Наша
+                команда состоит из 7 сотрудников и 10 подрядчиков и вместе мы осуществляем интересные проекты разных
+                масштабов Уже 5 лет мы придумываем полезные стратегии коммуникаций и продвижения, состоящие из идей и
+                инструментов, которые помогают вашему бизнесу. Мы мастера кропотливой работы, всем сердцем любим своих
+                клиентов и являемся для них надежным партнером, который всегда рядом.</span
+              >
+                        </div>
+                    </div>
+                    <div class="about-master">
+                        <div class="about-master__img"><img src="@/assets/img/foto-1.png" alt="" /></div>
+                        <div class="about-master__title">
+                            <p class="name">Юлиана Титаева</p>
+                            <p class="role">руководитель агентства </p>
+                        </div>
+                        <div class="about-master__desc">
+              <span
+              >9 лет опыта работы, в том числе, в крупнейших международных PR-агентствах. Полностью контролирует
+                деятельность агентства и развитие бизнеса. Владеет английским и португальским.</span
+              >
+                        </div>
+                    </div>
+                    <div class="about-partners">
+                        <div class="about-partners__content">
+                            <div class="about-partners__title">
+                                <p class="name">Антон Вербов</p>
+                                <p class="role">партнер</p>
+                            </div>
+                            <div class="about-partners__desc">
+                <span
+                >Специалист в области связей с общественностью и органами государственной власти. 15 лет опыта работы.
+                  Прошел путь от помощника главного редактора до начальника Управления коммуникационных проектов РИА
+                  Новости. Отвечает за совместные проекты с государственными структурами и некоммерческим сектором.
+                  Владеет английским.</span
+                >
+                            </div>
+                        </div>
+                        <div class="about-partners__img"><img src="@/assets/img/foto-2.png" alt="" /></div>
+                    </div>
+                </div>
+            </section>
+            <section class="cf"></section>
+            <Keys/>
+        </section>
+        <section class="reviews">
+            <div class="reviews-title"><p class="reviews-title__text">ОТЗЫВЫ</p></div>
+            <div class="reviews-had"><img src="@/assets/img/hands.svg" alt="" /></div>
+            <div class="reviews-list">
+                <div class="reviews-row">
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="item-img"><img src="@/assets/img/reviews.png" alt="" /></div>
+                        <div class="item-text">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam diam penatibus vitae ac, eget.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="work-title"><p class="work-title__text">Как мы работаем</p></div>
+            <div class="work-list">
+                <div class="work-wrapper">
+                    <div class="work-item item-1" data-id="1">
+                        <div class="work-item__img"><img src="@/assets/img/work/work-1.png" alt="" /></div>
+                        <div class="work-item__content">
+                            <div class="content-title">
+                                <span>ЗНАКОМСТВО<br />ДРУГ С ДРУГОМ</span>
+                            </div>
+                            <div class="content-desc">
+                <span
+                >Мы получаем от вас заполненный бриф и после встречаемся, либо организовываем конференц-колл. Изучаем
+                  специфику деятельности вашей компании и цели, которые вы хотите достигнуть.</span
+                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item item-2" data-id="2">
+                        <div class="work-item__img"><img src="@/assets/img/work/work-2.png" alt="" /></div>
+                        <div class="work-item__content">
+                            <div class="content-title">
+                                <span>Разработка<br />стратегии</span>
+                            </div>
+                            <div class="content-desc">
+                <span
+                >В срок до 2 недель разрабатываем стратегию продвижения и формируем предложение с четкими KPIs и
+                  сроками. Проводим презентацию очно или онлайн, обсуждаем детали и при необходимости
+                  корректируем.</span
+                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item item-3" data-id="3">
+                        <div class="work-item__img"><img src="@/assets/img/work/work-3.png" alt="" /></div>
+                        <div class="work-item__content">
+                            <div class="content-title">
+                                <span>Подписнание<br />договора</span>
+                            </div>
+                            <div class="content-desc">
+                <span
+                >Все утвержденные KPIs и сроки работ прописываются в контракте и после получения предоплаты мы
+                  начинаем работу .</span
+                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item item-4" data-id="4">
+                        <div class="work-item__img"><img src="@/assets/img/work/work-4.png" alt="" /></div>
+                        <div class="work-item__content">
+                            <div class="content-title">
+                                <span>Реализация<br />стратегии</span>
+                            </div>
+                            <div class="content-desc">
+                <span
+                >Команда агентства работает над проектом, а аккаунт-менеджер всегда с вами на связи. Он обсуждает и
+                  контролирует все текущие вопросы, передает информацию от вас команде и наоборот и является
+                  ответственным за исполнение всех договоренностей.</span
+                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item item-5" data-id="5">
+                        <div class="work-item__img"><img src="@/assets/img/work/work-5.png" alt="" /></div>
+                        <div class="work-item__content">
+                            <div class="content-title">
+                                <span>Предоставление<br />отчетности</span>
+                            </div>
+                            <div class="content-desc">
+                                <span>Каждый месяц мы присылаем подробный понятный отчет, в котором вы видите результаты работы.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="document">
+            <div class="document-title">
+                <p class="document-title__text">ХОЧУ<br />ЗАПОЛНИТЬ БРИФ</p>
+            </div>
+            <div class="document-img"><img src="@/assets/img/brif.svg" alt="" /></div>
+        </section>
+        <section class="phone">
+            <div class="phone-img"><img src="@/assets/img/phone.svg" alt="" /></div>
+            <div class="phone-title">
+                <p class="phone-title__text">ХОЧУ, чтобы<br />мне перезвонили</p>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-container">
+                <div class="contact-row">
+                    <div class="contact-wrapper">
+                        <div class="contact-title"><p class="contact-title__text">Наши контакты</p></div>
+                        <div class="contact-block">
+                            <div class="block-title"><p class="block-title__text">Мы всегда на связи</p></div>
+                            <div class="block-wrap">
+                                <a href="">+7 (495) 150-32-16</a> <a href="">+7 (495) 150-32-16</a> <a href="">hello@freedom-pr.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <div class="form-title"><p class="form-title__text">Хотите работать у нас?</p></div>
+                            <div class="form-desc"><p class="form-desc__text">заполните форму и мы свяжемся с Вами</p></div>
+                            <div class="form-wrapper">
+                                <div class="form-input"><input name="" placeholder="имя" /></div>
+                                <div class="form-input"><input name="" placeholder="телефон" /></div>
+                                <div class="form-input"><input name="" placeholder="e-mail" /></div>
+                                <div class="form-submit"><button>Отправить</button></div>
+                            </div>
+                            <div class="form-policy">
+                                <p class="form-policy__text">
+                                    Нажав кнопку “Отправить” вы даете согласие<br />на обработку Ваших <a href="">персональных данных</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-img"><img src="@/assets/img/contact.png" alt="" /></div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-privat">
+                        <p class="contact-privat__text">© 2020 “FREEDOM PR”. All rights reserved.<br />Privacy policy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+    import Header from '@/components/Header';
+    import Keys from '@/components/Keys';
+    export default {
+        name: "Home",
+        components: {
+            Header,
+            Keys
+        }
+    }
 </script>
+
+<style scoped lang="less">
+
+</style>
