@@ -34,7 +34,20 @@
             return{
                 swiperOptions:{
                     direction: 'vertical',
-                    slidesPerView: 7
+                    slidesPerView: 7,
+                    breakpoints: {
+                        // when window width is >= 320px
+                        320: {
+                            slidesPerView: 3,
+                            direction: 'horizontal',
+                            spaceBetween: 20,
+                        },
+                        600:{
+                            direction: 'vertical',
+                            slidesPerView: 7,
+                            spaceBetween: 0,
+                        }
+                    }
                 }
             }
         }

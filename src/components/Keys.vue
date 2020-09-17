@@ -150,6 +150,19 @@
                         draggable: true,
                         dragSize: 39
                     },
+                    breakpoints: {
+                        // when window width is >= 320px
+                        320: {
+                            slidesPerView: 2,
+                            direction: 'horizontal',
+                            spaceBetween: 5,
+                        },
+                        600: {
+                            direction: 'vertical',
+                            slidesPerView: 2,
+                            spaceBetween: 0,
+                        }
+                    }
                 }
             }
         },

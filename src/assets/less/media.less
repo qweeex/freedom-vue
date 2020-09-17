@@ -30,8 +30,12 @@
       display: none;
     }
     &-content{
-      img{
+      svg{
         width: 91%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
@@ -69,5 +73,147 @@
         }
       }
     }
+    &-line{
+      margin-top: 25px;
+      .marquee-line{
+        top: 6px;
+      }
+      &__text{
+        font-size: 22px;
+        line-height: 30px;
+      }
+      &__block{
+        max-width: 93%;
+        height: 36px;
+      }
+    }
+  }
+  .about{
+    padding-top: 30px;
+    &-container{
+      max-width: 91%;
+
+    }
+    &-title{
+      padding-left: 50px;
+      &__text{
+        font-size: 20px;
+        line-height: 128.5%;
+      }
+    }
+    &-content{
+      margin-top: 17px;
+      padding-left: 50px;
+      &__title{
+        span{
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      &__desc{
+        span{
+          font-size: 13px;
+          line-height: 140%;
+        }
+      }
+    }
+    &-master{
+      width: 90%;
+      margin-top: 25px;
+      &__img{
+        padding-left: 50px;
+        img{
+          max-width: 100%;
+        }
+      }
+      &__title{
+        padding-left: 50px;
+        width: 90%;
+      }
+      &__desc{
+        width: 90%;
+        padding-left: 50px;
+      }
+    }
+    &-partners{
+      width: 90%;
+      margin-top: 25px;
+      flex-direction: column-reverse;
+      &__title{
+        width: 100%;
+        text-align: left;
+      }
+      &__desc{
+        width: 100%;
+        text-align: left;
+      }
+      &__content{
+        padding-right: 0;
+        padding-left: 50px;
+        text-align: left;
+        border-top: 0;
+      }
+      &__img{
+        padding-left: 50px;
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .keys{
+    margin-top: 30px;
+    &-logo{
+      width: 100%;
+      &__slider{
+        height: auto !important;
+      }
+    }
+    &-title{
+      &__text{
+        font-size: 20px;
+        line-height: 128.5%;
+      }
+    }
+    &-content{
+      &__slider{
+        height: auto;
+        .content-slide{
+          &__wrapper{
+            flex-direction: column;
+            align-items: flex-start;
+            .slider-img{
+              img{
+                width: 190px;
+                height: 124px;
+              }
+            }
+            .slider-content{
+              padding-left: 0;
+              .content-title{
+                font-size: 13px;
+                line-height: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .PopupKeys{
+    display: none;
+  }
+  .work{
+    display: none;
+  }
+  .document{
+    display: none;
+  }
+  .phone{
+    display: none;
+  }
+  .contact{
+    display: none;
   }
 }
