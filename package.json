@@ -7,9 +7,9 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "animejs": "^3.2.0",
     "core-js": "^3.6.5",
-    "ion-rangeslider": "^2.3.1",
-    "swiper": "^6.2.0",
+    "swiper": "^5.4.5",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.2.0",

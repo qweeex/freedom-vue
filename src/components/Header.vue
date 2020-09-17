@@ -2,13 +2,15 @@
     <section class="header">
         <div class="header-container">
             <div class="header-logo">
-                <a href=""><img src="@/assets/img/logo.svg" alt="" /></a>
+                <a href="/"><img src="@/assets/img/logo.svg" alt="" /></a>
             </div>
             <div class="header-menu">
                 <nav>
-                    <a href="" class="header-menu__link">Услуги</a> <a href="" class="header-menu__link">О нас</a>
-                    <a href="" class="header-menu__link">Кейсы</a> <a href="" class="header-menu__link">Консультации</a>
-                    <a href="" class="header-menu__link">Контакты</a>
+                    <a href="#service" class="header-menu__link">Услуги</a>
+                    <a href="#about" class="header-menu__link">О нас</a>
+                    <a href="#keys" class="header-menu__link">Кейсы</a>
+                    <a href="#consulting" class="header-menu__link">Консультации</a>
+                    <a href="#contact" class="header-menu__link">Контакты</a>
                 </nav>
             </div>
             <div class="header-lang">
@@ -19,6 +21,9 @@
             </div>
             <div class="header-site">
                 <a href=""><span>Перейти на</span> <img src="@/assets/img/site.svg" alt="" /></a>
+            </div>
+            <div class="header-music">
+                <img src="@/assets/img/music.svg" alt="">
             </div>
         </div>
     </section>
@@ -31,5 +36,13 @@
 </script>
 
 <style scoped>
-
+    .header-container{
+        position: relative;
+    }
+    .header-music{
+        position: absolute;
+        right: -70px;
+        top: 5px;
+        cursor: pointer;
+    }
 </style>

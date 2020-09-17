@@ -1,10 +1,10 @@
 <template>
-    <section class="keys">
+    <section class="keys" id="keys">
         <div class="keys-container">
             <div class="keys-row">
                 <Logo/>
                 <div :class="{ hiddenContent: showPopup }" class="keys-content">
-                    <div v-swiper:mySwiper="swiperOptions" class="keys-content__slider swiper-container">
+                    <div v-swiper:KeysSwiper="swiperOptions" class="keys-content__slider swiper-container">
                         <div class="swiper-wrapper">
                             <div class="content-slide swiper-slide">
                                 <div class="content-slide__wrapper">
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <!-- Add Scrollbar -->
-                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-scrollbar custom-scroll"></div>
                     </div>
                 </div>
                 <div :class="{ hiddenContent: showPopup }" class="keys-title">
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </div>
-        <div class="PopupKeys" v-if="false" :class="{ PopupKeysActive: showPopup }">
+        <div class="PopupKeys" :class="{ PopupKeysActive: showPopup }">
             <div class="PopupKeys-wrapper">
                 <div class="PopupKeys-close">
                     <div class="PopupKeys-close__btn" v-on:click="PopupHidden()"><span>Вернуться назад</span></div>
@@ -129,6 +129,7 @@
 
 <script>
     import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+    import 'swiper/css/swiper.min.css'
     import Logo from "./Keys/Logo";
     export default {
         name: "Keys",
@@ -146,7 +147,8 @@
                     spaceBetween: 0,
                     scrollbar: {
                         el: '.swiper-scrollbar',
-                        hide: false,
+                        draggable: true,
+                        dragSize: 39
                     },
                 }
             }
@@ -158,19 +160,11 @@
             PopupHidden(){
                 this.showPopup = false;
             }
-        },
-        computed: {
-            swiper() {
-                return this.$refs.mySwiper.$swiper
-            }
-        },
-        mounted() {
-            console.log('Current Swiper instance object', this.swiper)
         }
     }
 </script>
 
-<style lang="less" scoped>
+<style lang="less" >
     .PopupKeysActive{
         right: 0;
     }
@@ -185,5 +179,18 @@
     /*  Удалить потом  */
     .keys-content__slider .content-slide{
         margin-bottom: 0;
+    }
+    .custom-scroll{
+        right: 33% !important;
+        background: #000000;
+        border-radius: 0;
+        width: 2px !important;
+    }
+    .swiper-scrollbar-drag{
+        background: rgb(0 0 0);
+        border-radius: 0;
+        left: -7px;
+        top: 0;
+        width: 16px;
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="keys-logo">
-        <div class="keys-logo__slider swiper-container">
+        <div  v-swiper:mySwiper="swiperOptions" class="keys-logo__slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="logo-slide swiper-slide"><img src="@/assets/img/logo/logo-1.png" alt="" /></div>
                 <div class="logo-slide swiper-slide"><img src="@/assets/img/logo/logo-2.png" alt="" /></div>
@@ -22,20 +22,21 @@
 </template>
 
 <script>
-    import Swiper from 'swiper';
+    import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 
     export default {
         name: "Logo",
+        components: {
+            Swiper,
+            SwiperSlide
+        },
         data() {
             return{
-
+                swiperOptions:{
+                    direction: 'vertical',
+                    slidesPerView: 7
+                }
             }
-        },
-        mounted() {
-            let vertical = new Swiper('.keys-logo__slider', {
-                direction: 'vertical',
-                slidesPerView: "auto"
-            })
         }
     }
 </script>
@@ -44,5 +45,8 @@
     .keys-logo__slider{
         height: 100vh;
         overflow: hidden;
+    }
+    .keys-logo__slider .logo-slide{
+        margin-bottom: 0;
     }
 </style>
