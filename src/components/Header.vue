@@ -1,5 +1,5 @@
 <template>
-    <section class="header">
+    <section class="header" style="opacity: 0;">
         <div class="header-container">
             <div class="header-logo">
                 <a href="/"><img src="@/assets/img/logo.svg" alt="" /></a>
@@ -39,10 +39,7 @@
     .header-container{
         position: relative;
     }
-    .header-music{
-        position: absolute;
-        right: -70px;
-        top: 5px;
-        cursor: pointer;
+    .header{
+      transition: all 0.4s;
     }
 </style>

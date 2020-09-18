@@ -131,6 +131,8 @@
     import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
     import 'swiper/css/swiper.min.css'
     import Logo from "./Keys/Logo";
+    import Keys from '@/static/keys.json';
+
     export default {
         name: "Keys",
         components: {
@@ -144,7 +146,7 @@
                 swiperOptions:{
                     direction: 'vertical',
                     slidesPerView: 2,
-                    spaceBetween: 0,
+                    spaceBetween: 40,
                     scrollbar: {
                         el: '.swiper-scrollbar',
                         draggable: true,
@@ -166,14 +168,21 @@
                 }
             }
         },
-        methods: {
+      methods: {
             PopupShow(){
                 this.showPopup = true;
             },
             PopupHidden(){
                 this.showPopup = false;
+            },
+            InitKeys(){
+              let Height = screen.height;
+              document.querySelector('.keys-content__slider').style.height = Height + 'px';
             }
-        }
+        },
+      mounted() {
+          this.InitKeys();
+      }
     }
 </script>
 
@@ -184,26 +193,5 @@
     .hiddenContent{
         opacity: 0;
         transition: all 0.4s;
-    }
-    .keys-content__slider{
-        height: 100vh;
-        overflow: hidden;
-    }
-    /*  Удалить потом  */
-    .keys-content__slider .content-slide{
-        margin-bottom: 0;
-    }
-    .custom-scroll{
-        right: 33% !important;
-        background: #000000;
-        border-radius: 0;
-        width: 2px !important;
-    }
-    .swiper-scrollbar-drag{
-        background: rgb(0 0 0);
-        border-radius: 0;
-        left: -7px;
-        top: 0;
-        width: 16px;
     }
 </style>
