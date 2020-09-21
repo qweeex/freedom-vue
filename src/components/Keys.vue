@@ -177,7 +177,7 @@
             },
             InitKeys(){
               let Height = screen.height;
-              document.querySelector('.keys-content__slider').style.height = Height + 'px';
+              document.querySelector('.keys-content__slider').style.height = 900 + 'px';
             }
         },
       mounted() {

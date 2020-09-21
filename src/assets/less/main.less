@@ -155,6 +155,7 @@ body { overflow: -moz-scrollbars-none; }
   }
   &-card{
     border: 5px solid #171717;
+    background: url("../img/big-bg.jpg") center center;
     .card-title{
       &__text{
         font-weight: bold;
@@ -270,17 +271,15 @@ body { overflow: -moz-scrollbars-none; }
   &-line{
     margin-top: 58px;
     position: relative;
-    &__text{
+    .marquee-line {
+      position: absolute;
+      top: 17px;
       font-weight: 800;
       font-size: 60px;
 
       text-transform: uppercase;
 
       color: #000000;
-    }
-    .marquee-line {
-      position: absolute;
-      top: 17px;
     }
     .marquee-white{
       color: #ffffff;
@@ -294,7 +293,16 @@ body { overflow: -moz-scrollbars-none; }
       bottom: 0;
       right: 0;
       margin: auto;
-      z-index: -1;
+      z-index: 1;
+      position: relative;
+      overflow: hidden;
+      .marquee-line {
+        position: absolute;
+        top: 17px;
+      }
+      .marquee-white{
+        color: #ffffff;
+      }
     }
   }
 }
@@ -448,7 +456,18 @@ body { overflow: -moz-scrollbars-none; }
     position: relative;
   }
   &-logo{
+    position: relative;
     width: 250px;
+    &::before{
+      width: 15.5px;
+      height: 233px;
+      display: block;
+      content: '';
+      position: absolute;
+      background: #171717;
+      left: -31px;
+      top: -113px;
+    }
     &__slider{
       width: 100%;
       .logo-slide{
