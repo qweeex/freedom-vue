@@ -181,7 +181,7 @@
         </section>
         <section class="reviews">
             <div class="reviews-title"><p class="reviews-title__text">ОТЗЫВЫ</p></div>
-            <div class="reviews-had"><img src="@/assets/img/hands.svg" alt="" /></div>
+            <div class="reviews-had"><img src="@/assets/img/hands.gif" alt="" /></div>
             <div class="reviews-list">
                 <div class="reviews-row">
                     <div class="reviews-item">
