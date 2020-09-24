@@ -1,5 +1,5 @@
 <template>
-    <section class="header" >
+    <section class="header video-elem hide-elem" >
         <div class="header-container">
             <div class="header-logo">
                 <a href="/"><img src="@/assets/img/logo.svg" alt="" /></a>
