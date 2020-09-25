@@ -353,7 +353,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="contact-img"><img src="@/assets/img/contact.png" alt="" /></div>
+                <ContactBlock/>
               </div>
               <div class="contact-row">
                   <div class="contact-privat">
@@ -366,7 +366,7 @@
 </template>
 
 <script>
-
+  import ContactBlock from "@/components/Contact/ContactBlock";
   import anime from 'animejs/lib/anime.es.js';
   import Header from '@/components/Header';
   import Keys from '@/components/Keys';
@@ -380,7 +380,8 @@
       components: {
           Header,
           Keys,
-         'lottie': Lottie
+         'lottie': Lottie,
+          ContactBlock
       },
       mounted() {
           this.MainAnimate();
@@ -460,7 +461,7 @@
             })
           },
           VimeoVideo(){
-            let player = new Player('made-in-ny', {
+            /*let player = new Player('made-in-ny', {
               id: 461358249,
               width: window.innerWidth,
               byline: false,
@@ -481,7 +482,11 @@
               document.querySelectorAll('.video-elem').forEach(function (item){
                 item.classList.remove('hide-elem');
               })
-            });
+            });*/
+            document.querySelector('#made-in-ny').style.opacity = 0;
+            document.querySelectorAll('.video-elem').forEach(function (item){
+              item.classList.remove('hide-elem');
+            })
           },
           handleAnimation: function (anim) {
             this.anim = anim;

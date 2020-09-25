@@ -46,6 +46,11 @@
                             direction: 'vertical',
                             slidesPerView: 7,
                             spaceBetween: 0,
+                        },
+                        1300:{
+                          direction: 'vertical',
+                          slidesPerView: 5,
+                          spaceBetween: 0,
                         }
                     }
                 }
